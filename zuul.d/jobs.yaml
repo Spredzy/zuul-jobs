@@ -23,6 +23,12 @@
       command: make ui-test-ci
 
 - job:
+    name: awx-ui-pf
+    parent: awx-tests
+    vars:
+      command: make ui-test-ci-pf
+
+- job:
     name: awx-swagger
     parent: awx-tests
     vars:
